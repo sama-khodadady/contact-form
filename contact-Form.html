@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact-Form</title>
+    <link rel="stylesheet" href="./styles/contact-Form.css" />
+    <link rel="stylesheet" href="./styles/media.css" />
+    <link rel="shortcut icon" href="./assets/images/favicon-32x32.png" />
+  </head>
+  <body>
+    <div class="modal">
+      <div>
+        <img src="" alt="" />
+        <span></span>
+      </div>
+      <p></p>
+    </div>
+    <main>
+      <form>
+        <h1>Contact Us</h1>
+        <div class="username-inputs">
+          <div class="form-group">
+            <label for="first-name"
+              >First Name <span class="required">*</span></label
+            >
+            <input type="text" id="first-name" />
+            <div id="first-name-alert"></div>
+          </div>
+          <div class="form-group">
+            <label for="">Last Name <span class="required">*</span></label>
+            <input type="text" id="last-name" />
+            <div id="last-name-alert"></div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="">Email Address <span class="required">*</span></label>
+          <input type="email" id="email" />
+          <div id="email-alert"></div>
+        </div>
+        <div class="form-group radio">
+          <label for="query">Query Type <span class="required">*</span></label>
+          <div id="query">
+            <div class="query-type">
+              <input type="radio" id="query1" name="query-type" />
+              <label for="query1">General Enquiry</label>
+            </div>
+            <div class="query-type">
+              <input type="radio" id="query2" name="query-type" />
+              <label for="query2">Support Request</label>
+            </div>
+          </div>
+          <div id="query-alert"></div>
+        </div>
+        <div class="form-group">
+          <label for="message">Message <span class="required">*</span></label>
+          <textarea id="message" rows="4"></textarea>
+          <div id="message-alert"></div>
+        </div>
+        <div class="form-group checkbox">
+          <div id="checkbox-div">
+            <input type="checkbox" id="checkbox" />
+            <label for="checkbox"
+              >I consent to being contacted by the team
+              <span class="required">*</span></label
+            >
+          </div>
+          <div id="checkbox-alert"></div>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </main>
+
+    <footer>
+      Challenge by
+      <a href="https://botostart.ir/">Botostart</a>
+      | Coded by
+      <a href="https://github.com/sama-khodadady">Sama Khodadady</a>
+    </footer>
+
+    <script src="./javascript/contact-Form.js"></script>
+  </body>
+</html>

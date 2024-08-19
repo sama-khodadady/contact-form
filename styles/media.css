@@ -1,0 +1,42 @@
+@media screen and (max-width: 400px) {
+  main form {
+    width: 100%;
+  }
+
+  .name-inputs {
+    flex-wrap: wrap;
+  }
+
+  #query {
+    flex-wrap: wrap;
+  }
+
+  .modal {
+    width: 300px;
+    padding: 20px;
+  }
+
+  .modal div {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+
+  .modal p {
+    text-align: center;
+  }
+}
+
+@media (min-width: 401px) and (max-width: 768px) {
+  main form {
+    width: 100%;
+  }
+
+  .modal {
+    width: 400px;
+  }
+
+  .modal p {
+    text-align: center;
+  }
+}
